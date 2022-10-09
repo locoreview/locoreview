@@ -310,43 +310,76 @@ body::-webkit-scrollbar {
 	min-height: 320px;
 }
 
-#weekly-hot,#reviewpost .big-image {
+#weekly-hot.big-image {
 	position: relative;
 }
 
-#weekly-hot,#reviewpost .big-image img {
+#reviewpost .big-image {
+	position: relative;
+}
+
+#weekly-hot .big-image img {
 	display: none;
 }
-#weekly-hot,#reviewpost img {
+
+#reviewpost .big-image img {
+	display: none;
+}
+
+#weekly-hot img {
+	vertical-align: middle;
+	border-radius: 11px;
+}
+
+#reviewpost img {
 	vertical-align: middle;
 	border-radius: 11px;
 }
 
 /* Position the image container (needed to position the left and right arrows) */
-#weekly-hot,#reviewpost .gallery {
+#weekly-hot .gallery {
 	position: relative;
 }
 
-#weekly-hot,#reviewpost .gallery-2 {
+#reviewpost .gallery {
+	position: relative;
+}
+
+#weekly-hot .gallery-2 {
+	position: relative;
+}
+
+#reviewpost .gallery-2 {
 	position: relative;
 }
 
 /* Hide the images by default */
-#weekly-hot,#reviewpost .innerGallery .thumbnail img {
+#weekly-hot .innerGallery .thumbnail img {
 	opacity: 0.45
 }
 
-#weekly-hot,#reviewpost .innerGallery .thumbnail img.active {
+#reviewpost .innerGallery .thumbnail img {
+	opacity: 0.45
+}
+
+#weekly-hot .innerGallery .thumbnail img.active {
+	opacity: 1;
+}
+
+#reviewpost .innerGallery .thumbnail img.active {
 	opacity: 1;
 }
 
 /* Add a pointer when hovering over the thumbnail images */
-#weekly-hot,#reviewpost .cursor {
+#weekly-hot .cursor {
+	cursor: pointer;
+}
+#reviewpost .cursor {
 	cursor: pointer;
 }
 
 /* Next & previous buttons */
-#weekly-hot,#reviewpost .control-slide-button {
+#weekly-hot .control-slide-button {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -357,22 +390,43 @@ body::-webkit-scrollbar {
 	-webkit-user-select: none;
 }
 
-#weekly-hot,#reviewpost .prev {
-	left: 1.8rem;
+#reviewpost .control-slide-button {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	z-index: 20;
+	transform: translateY(-50%);
+	display: flex;
+	user-select: none;
+	-webkit-user-select: none;
 }
 
-#weekly-hot,#reviewpost .next {
+#weekly-hot .prev {
+	left: 1.8rem;
+}
+#reviewpost .prev {
+	left: 1.8rem;
+}
+#weekly-hot .next {
+	right: 1.8rem;
+}
+
+#reviewpost .next {
 	right: 1.8rem;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 
-#weekly-hot,#reviewpost .control-slide-button svg:hover>path {
+#weekly-hot.control-slide-button svg:hover>path {
+	stroke: #FF6000;
+}
+
+#reviewpost .control-slide-button svg:hover>path {
 	stroke: #FF6000;
 }
 
 /* Number text (1/3 etc) */
-#weekly-hot,#reviewpost .numbertext {
+/* #weekly-hot,#reviewpost .numbertext {
 	color: #f2f2f2;
 	font-size: 0.7em;
 	padding: 0 4px;
@@ -382,14 +436,18 @@ body::-webkit-scrollbar {
     letter-spacing: 2px;
     background: #0000008c;
     border-radius: 5px;
-}
+} */
 
 #weekly-hot .gallery-info p, i {
 	font-family: Geomanist-Light;
 	font-size: 1rem;
 }
 
-#weekly-hot,#reviewpost .gallery-info h3, h4 {
+#weekly-hot .gallery-info h3, h4 {
+	font-family: Geomanist-Light;
+}
+
+#reviewpost  .gallery-info h3, h4 {
 	font-family: Geomanist-Light;
 }
 
