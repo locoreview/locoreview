@@ -13,68 +13,84 @@
 <link rel="stylesheet" href="css/main-style.css">
 <link rel="stylesheet" href="css/hover.css" >
 <link rel="stylesheet" href="css/libs/animate.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <meta name="viewport" content="width=device-with, initial-scale=1">
 </head>
 
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark pt-3 pb-lg-5 mt-lg-3" >
-		<div class="container justify-content-between">
-
-			<button class="navbar-toggler navbar-toggler-right border-0" type="button" data-bs-toggle="collapse" data-bs-target="#theMENU">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="navbar-collapse  text-center justify-content-between">
-				<ul class="col-lg-12 navbar-nav justify-content-between">
-					<li class="col-lg-5">
-						<div class="navbar-collapse collapse text-center justify-content-between" id="theMENU">
-							<ul class="col-lg-10 navbar-nav justify-content-between">
-								<li class="nav-item" > 
-									<a class="nav-link " href="index.html" >Khám phá</a>
-								</li>
-								<li class="nav-item " > 
-									<a class="nav-link  active-page" href="discovery-example.html" >Ăn uống</a>
-								</li>
-								<li class="nav-item " > 
-									<a class="nav-link " href="#" >Du lịch</a>
-								</li>
-							
-							</ul>
-						</div>
-					</li>
-					
-					<li class="col-lg-2 nav-item d-none d-lg-block ml-5">
-						<a href="index.html"><img src="image/logo.png" alt="logo"></a>
-					</li>
-
-					<li class="col-lg-5">
-							<ul class="navbar-nav justify-content-between">
-								<li class="nav-item">
-									<a class="nav-link search-space" href="#">
-										<btn>
-                                            <i class="fa-solid fa-magnifying-glass me-1 "></i>
-                                            <input type="search" id="search" placeholder="Nhập từ khóa"> 
-										</btn>
-									</a>
-								</li>
-								<li class="icon d-flex">
-									<a class="nav-link px-lg-4 " href="#"><i class="fa-regular fa-plus " ></i></a>
-									<a class="nav-link px-lg-4" href="#"><i class="fa-regular fa-user"></i></a>
-									<a class="nav-link px-lg-4" href="#"><i class="fa-regular fa-paper-plane"></i></a>
-								</li>
-
-							</ul>
-					</li>
-					
-				</ul>
-			</div>
-		</div>		
-	</nav>
+	<nav class="navbar navbar-expand-lg navbar-dark pt-3 pb-lg-5 mt-lg-3">
+        <div class="container justify-content-between">
+          <div class="navbar-collapse text-center">
+            <div
+              class="col-lg-12 navbar-nav d-flex justify-content-between position-relative"
+            >
+              <div class="col-lg-5 col-sm-2 nav-item menu">
+                <button
+                  class="navbar-toggler navbar-toggler-right border-0"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#theMENU"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse text-center" id="theMENU">
+                  <ul class="col-lg-10 navbar-nav justify-content-between">
+                    <li class="nav-item">
+                      <a class="nav-link " href="index.html"
+                        >Khám phá</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active-page" href="discovery-example.html"
+                        >Ăn uống</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Du lịch</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+  
+              <div class="col-lg-2 col-sm-8 nav-item">
+                <a href="index.html"><img src="image/logo.png" alt="logo" /></a>
+              </div>
+  
+              <div class="col-lg-3 col-sm-12 nav-item search">
+                <a class="nav-link search-space" href="#">
+                  <btn
+                    ><i class="fa-solid fa-magnifying-glass me-1"></i
+                    ><input
+                      type="search"
+                      id="search"
+                      placeholder="Nhập từ khóa"
+                    />
+                  </btn>
+                </a>
+              </div>
+  
+              <div class="col-lg-2 col-sm-2 nav-item">
+                <div class="icon d-flex">
+                  <a class="nav-link px-lg-4" href="#"
+                    ><i class="fa-regular fa-plus"></i
+                  ></a>
+                  <a class="nav-link px-lg-4" href="#"
+                    ><i class="fa-regular fa-user"></i
+                  ></a>
+                  <a class="nav-link px-lg-4" href="#"
+                    ><i class="fa-regular fa-paper-plane"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     <main>
         <section id="discovery-slider">
-            <div class="swiper mySwiper container py-lg-6 mt-lg-3 align-content-center">
+            <div class="swiper mySwiper container py-lg-3 mt-lg-3 align-content-center" data-aos="zoom-in">
                 <div class="swiper-wrapper ">
                     <div class="swiper-slide">
                         <div class="row">
@@ -143,7 +159,7 @@
 				<div class="tab mt-3">
 
 				  <!-- Nav pills -->
-				  <ul class="nav justify-content-around pb-3 col-lg-8 mx-auto " role="tablist">
+				  <ul class="nav justify-content-around pb-3 col-lg-8 mx-auto " role="tablist" data-aos="fade-up">
 					<li class="nav-item">
 					  <a class="nav-link active" data-bs-toggle="pill" href="#menu0">Ăn Sáng</a>
 					</li>
@@ -165,22 +181,64 @@
 					</li>
 				  </ul>
 
-                    <div class="row px-lg-3 mx-lg-3 text-light theSORT">
-                        <div class="col-lg-3 d-flex justify-content-between " id=" diadiem">
+                    <div class="row px-lg-3 mx-lg-3 text-light theSORT" data-aos="fade-up">
+                        <div class="col-lg-3 d-flex justify-content-between theSORT__item" id=" diadiem">
                             <h4 class="ps-lg-2 mt-lg-2 ">Địa điểm</h4>
                             <i class="fa-solid fa-sort-down me-lg-4"></i>
+                            <div id="dr1" class="dropdown-content">
+                                <span>Gần tôi</span>
+                                <span>TP.HCM</span>
+                                <span>Hà Nội</span>
+                                <span>Cần Thơ</span>
+                                <span>Đà Nẵng</span>
+                                <span>Đà Lạt</span>
+                                <span>Bà Rịa - Vũng Tàu</span>
+                                <span>Hà Giang</span>
+                                <span>Sapa</span>
+                                <span>Cần Thơ</span>
+                                <span>Đồng Nai</span>
+                                <span>Quảng Ngãi</span>
+                                <span>Hải Phòng</span>
+                                <span>Thừa Thiên - Huế</span>
+                              </div>
                         </div>
-                        <div class="col-lg-3 d-flex justify-content-between" id="nhucau">
-                            <h4 class="mt-lg-2 i-border">Nhu cầu</h4>
+    
+    
+                        <div class="col-lg-3 d-flex justify-content-between theSORT__item" id="nhucau">
+                            <h4 class="mt-lg-2 ">Nhu cầu</h4>
                             <i class="fa-solid fa-sort-down me-lg-4"></i>
+                            <div id="dr1" class="dropdown-content">
+                                <span>Ăn sáng</span>
+                                <span>Ăn trưa</span>
+                                <span>Ăn tối</span>
+                                <span>Ăn vặt</span>
+                                <span>Tráng miệng</span>
+                                <span>Cà phê</span>
+                              </div>
                         </div>
-                        <div class="col-lg-3 d-flex justify-content-between" id="danhgia">
-                            <h4 class="mt-lg-2 i-border">Đánh giá</h4>
+    
+                        <div class="col-lg-3 d-flex justify-content-between theSORT__item" id="danhgia">
+                            <h4 class="mt-lg-2 ">Đánh giá</h4>
                             <i class="fa-solid fa-sort-down  me-lg-4 "></i>
+                            <div id="dr1" class="dropdown-content">
+                                <span><img src="image/vote5.png" alt="vote" /></span>
+                                <span><img src="image/vote4.png" alt="vote" /></span>
+                                <span><img src="image/vote3.png" alt="vote" /></span>
+                                <span><img src="image/vote2.png" alt="vote" /></span>
+                                <span><img src="image/vote1.png" alt="vote" /></span>
+                              </div>
                         </div>
-                        <div class="col-lg-3 mucgia d-flex justify-content-between" id="mucgia">
-                            <h4 class=" mt-lg-2 i-border">Mức giá</h4>
+    
+                        <div class="col-lg-3 mucgia d-flex justify-content-between theSORT__item" id="mucgia">
+                            <h4 class=" mt-lg-2">Mức giá</h4>
                             <i class="fa-solid fa-sort-down pe-lg-3"></i>
+                            <div id="dr1" class="dropdown-content">
+                                <span>Trên 1 triệu</span>
+                                <span>Trên 500k</span>
+                                <span>Dưới 500k</span>
+                                <span>Dưới 300k</span>
+                                <span>Dưới 100k</span>
+                              </div>
                         </div>
 				    </div>
 
@@ -190,7 +248,8 @@
                             <div class="row justify-content-between">
 
                                 <!-- 1 -->
-                                <div class="col-lg-4 top1">
+                                <div class="col-lg-4 top1" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="badge">
                                         <h6>top <br>review</h6>
                                     </div>
@@ -233,7 +292,8 @@
                                 </div>
 
                                 <!-- 2 -->
-                                <div class="col-lg-4 top1">
+                                <div class="col-lg-4 top1" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="badge">
                                         <h6>top <br>review</h6>
                                     </div>
@@ -275,7 +335,8 @@
                                 </div>
 
                                 <!-- 3 -->
-                                <div class="col-lg-4 top1">
+                                <div class="col-lg-4 top1" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="badge">
                                         <h6>top <br>review</h6>
                                     </div>
@@ -318,7 +379,8 @@
                                 
                                 
                                 <!-- 4 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/ansang/ansang4.jpeg" class="img-fluid">
                                     </div>
@@ -357,7 +419,8 @@
                                 </div>
                                 
                                 <!-- 5 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/ansang/ansang9.jpeg" class="img-fluid">
                                     </div>
@@ -396,7 +459,8 @@
                                 </div>
                                 
                                 <!-- 6 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/ansang/ansang3.jpeg" class="img-fluid">
                                     </div>
@@ -436,7 +500,8 @@
                                 </div>
                                 
                                 <!-- 7 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/ansang/ansang8.jpeg" class="img-fluid">
                                     </div>
@@ -476,7 +541,8 @@
                                 </div>
                                 
                                 <!-- 8 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/ansang/ansang11.jpeg" class="img-fluid">
                                     </div>
@@ -516,7 +582,8 @@
                                 </div>
 
                                 <!-- 9 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/ansang/ansang6.jpeg" class="img-fluid">
                                     </div>
@@ -556,7 +623,8 @@
                                 </div>
 
                                 <!-- 10 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center"> 
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/ansang/ansang14.jpeg" class="img-fluid">
                                     </div>
@@ -597,7 +665,8 @@
 
 
                                 <!-- 11 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/ansang/ansang13.jpeg" class="img-fluid">
                                     </div>
@@ -637,7 +706,8 @@
                                 </div>
 
                                 <!-- 12 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/ansang/ansang12.jpeg" class="img-fluid">
                                     </div>
@@ -676,7 +746,8 @@
                                     </div>
                                 </div>
 
-                                <div class="button-center">
+                                <div class="button-center" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <a href="#"><div class="btn vertical-center">Xem Thêm</div></a>
                                 </div>
                             </div>
@@ -686,7 +757,8 @@
                             <div class="row justify-content-between">
 
                                 <!-- 1 -->
-                                <div class="col-lg-4 top1">
+                                <div class="col-lg-4 top1" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="badge">
                                         <h6>top <br>review</h6>
                                     </div>
@@ -728,7 +800,8 @@
                                 </div>
 
                                 <!-- 2 -->
-                                <div class="col-lg-4 top1">
+                                <div class="col-lg-4 top1" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="badge">
                                         <h6>top <br>review</h6>
                                     </div>
@@ -770,7 +843,8 @@
                                 </div>
 
                                 <!-- 3 -->
-                                <div class="col-lg-4 top1">
+                                <div class="col-lg-4 top1" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="badge">
                                         <h6>top <br>review</h6>
                                     </div>
@@ -813,7 +887,8 @@
                                 
                                 
                                 <!-- 4 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua12.jpeg" class="img-fluid">
                                     </div>
@@ -852,7 +927,8 @@
                                 </div>
                                 
                                 <!-- 5 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua11.jpeg" class="img-fluid">
                                     </div>
@@ -891,7 +967,8 @@
                                 </div>
                                 
                                 <!-- 6 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua8.jpeg" class="img-fluid">
                                     </div>
@@ -931,7 +1008,8 @@
                                 </div>
                                 
                                 <!-- 7 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center" >
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua14.jpeg" class="img-fluid">
                                     </div>
@@ -971,7 +1049,8 @@ Hân H.
                                 </div>
                                 
                                 <!-- 8 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua15.jpeg" class="img-fluid">
                                     </div>
@@ -1011,7 +1090,8 @@ Hân H.
                                 </div>
 
                                 <!-- 9 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua3.jpeg" class="img-fluid">
                                     </div>
@@ -1051,7 +1131,8 @@ Hân H.
                                 </div>
 
                                 <!-- 10 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua16.jpeg" class="img-fluid">
                                     </div>
@@ -1091,7 +1172,8 @@ Hân H.
 
 
                                 <!-- 11 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua2.jpeg"	 class="img-fluid">
                                     </div>
@@ -1130,7 +1212,8 @@ Hân H.
                                 </div>
 
                                 <!-- 12 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua18.jpeg" class="img-fluid">
                                     </div>
@@ -1168,7 +1251,8 @@ Hân H.
                                     </div>
                                 </div>
 
-                                <div class="button-center">
+                                <div class="button-center" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <a href="#"><div class="btn vertical-center">Xem Thêm</div></a>
                                 </div>
                             </div>
@@ -1179,7 +1263,8 @@ Hân H.
                             <div class="row justify-content-between">
 
                                 <!-- 1 -->
-                                <div class="col-lg-4 top1">
+                                <div class="col-lg-4 top1" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="badge">
                                         <h6>top <br>review</h6>
                                     </div>
@@ -1221,7 +1306,8 @@ Hân H.
                                 </div>
 
                                 <!-- 2 -->
-                                <div class="col-lg-4 top1">
+                                <div class="col-lg-4 top1" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="badge">
                                         <h6>top <br>review</h6>
                                     </div>
@@ -1263,7 +1349,8 @@ Hân H.
                                 </div>
 
                                 <!-- 3 -->
-                                <div class="col-lg-4 top1">
+                                <div class="col-lg-4 top1" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="badge">
                                         <h6>top <br>review</h6>
                                     </div>
@@ -1306,7 +1393,8 @@ Hân H.
                                 
                                 
                                 <!-- 4 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua12.jpeg" class="img-fluid">
                                     </div>
@@ -1345,7 +1433,8 @@ Hân H.
                                 </div>
                                 
                                 <!-- 5 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua11.jpeg" class="img-fluid">
                                     </div>
@@ -1384,7 +1473,8 @@ Hân H.
                                 </div>
                                 
                                 <!-- 6 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua8.jpeg" class="img-fluid">
                                     </div>
@@ -1424,7 +1514,8 @@ Hân H.
                                 </div>
                                 
                                 <!-- 7 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua6.jpeg" class="img-fluid">
                                     </div>
@@ -1463,7 +1554,8 @@ Hân H.
                                 </div>
                                 
                                 <!-- 8 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua17.jpeg" class="img-fluid">
                                     </div>
@@ -1503,7 +1595,8 @@ Hân H.
                                 </div>
 
                                 <!-- 9 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua15.jpeg" class="img-fluid">
                                     </div>
@@ -1543,7 +1636,8 @@ Hân H.
                                 </div>
 
                                 <!-- 10 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua13.jpeg" class="img-fluid">
                                     </div>
@@ -1583,7 +1677,8 @@ Hân H.
 
 
                                 <!-- 11 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua1.jpeg"	 class="img-fluid">
                                     </div>
@@ -1622,7 +1717,8 @@ Hân H.
                                 </div>
 
                                 <!-- 12 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/antrua/antrua24.jpeg" class="img-fluid">
                                     </div>
@@ -1660,7 +1756,8 @@ Hân H.
                                     </div>
                                 </div>
 
-                                <div class="button-center">
+                                <div class="button-center" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <a href="#"><div class="btn vertical-center">Xem Thêm</div></a>
                                 </div>
                             </div>
@@ -1671,7 +1768,8 @@ Hân H.
                             <div class="row justify-content-between">
 
                                 <!-- 1 -->
-                                <div class="col-lg-4 top1">
+                                <div class="col-lg-4 top1" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="badge">
                                         <h6>top <br>review</h6>
                                     </div>
@@ -1713,7 +1811,8 @@ Hân H.
                                 </div>
 
                                 <!-- 2 -->
-                                <div class="col-lg-4 top1">
+                                <div class="col-lg-4 top1" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="badge">
                                         <h6>top <br>review</h6>
                                     </div>
@@ -1755,7 +1854,8 @@ Hân H.
                                 </div>
 
                                 <!-- 3 -->
-                                <div class="col-lg-4 top1">
+                                <div class="col-lg-4 top1" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="badge">
                                         <h6>top <br>review</h6>
                                     </div>
@@ -1798,7 +1898,8 @@ Hân H.
                                 
                                 
                                 <!-- 4 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/anvat/3.jpeg" class="img-fluid">
                                     </div>
@@ -1837,7 +1938,8 @@ Hân H.
                                 </div>
                                 
                                 <!-- 5 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/anvat/12.jpeg" class="img-fluid">
                                     </div>
@@ -1876,7 +1978,8 @@ Hân H.
                                 </div>
                                 
                                 <!-- 6 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/anvat/5.jpeg" class="img-fluid">
                                     </div>
@@ -1916,7 +2019,8 @@ Hân H.
                                 </div>
                                 
                                 <!-- 7 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/anvat/7.jpeg" class="img-fluid">
                                     </div>
@@ -1956,7 +2060,8 @@ Hân H.
                                 </div>
                                 
                                 <!-- 8 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/anvat/9.jpeg" class="img-fluid">
                                     </div>
@@ -1996,7 +2101,8 @@ Hân H.
                                 </div>
 
                                 <!-- 9 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/anvat/10.jpeg" class="img-fluid">
                                     </div>
@@ -2036,7 +2142,8 @@ Hân H.
                                 </div>
 
                                 <!-- 10 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/anvat/11.jpeg" class="img-fluid">
                                     </div>
@@ -2076,7 +2183,8 @@ Hân H.
 
 
                                 <!-- 11 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/anvat/13.jpeg"	 class="img-fluid">
                                     </div>
@@ -2115,7 +2223,8 @@ Hân H.
                                 </div>
 
                                 <!-- 12 -->
-                                <div class="col-lg-4 top1" style="padding-top:7rem">
+                                <div class="col-lg-4 top1" style="padding-top:7rem" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <div class="col-10 mx-auto">
                                         <img src="image/discorvery/anvat/4.jpeg" class="img-fluid">
                                     </div>
@@ -2153,7 +2262,8 @@ Hân H.
                                     </div>
                                 </div>
 
-                                <div class="button-center">
+                                <div class="button-center" data-aos="fade-up"
+                                data-aos-anchor-placement="top-center">
                                     <a href="#"><div class="btn vertical-center">Xem Thêm</div></a>
                                 </div>
                             </div>
@@ -2224,6 +2334,8 @@ Hân H.
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="javascript/custom-discovery.js"></script>
 <script src="javascript/wow.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 <script> new WOW().init(); </script>
 </body>
 </html>

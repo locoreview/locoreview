@@ -13,64 +13,76 @@
 <link rel="stylesheet" href="css/main-style.css">
 <link rel="stylesheet" href="css/hover.css" >
 <link rel="stylesheet" href="css/libs/animate.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <meta name="viewport" content="width=device-with, initial-scale=1">
 </head>
 
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark pt-3 pb-lg-5 mt-lg-3" >
+	<nav class="navbar navbar-expand-lg navbar-dark pt-3 pb-lg-5 mt-lg-3">
 		<div class="container justify-content-between">
-
-			<button class="navbar-toggler navbar-toggler-right border-0" type="button" data-bs-toggle="collapse" data-bs-target="#theMENU">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="navbar-collapse  text-center justify-content-between">
-				<ul class="col-lg-12 navbar-nav justify-content-between">
-					<li class="col-lg-5">
-						<div class="navbar-collapse collapse text-center justify-content-between" id="theMENU">
-							<ul class="col-lg-10 navbar-nav justify-content-between">
-								<li class="nav-item" > 
-									<a class="nav-link active-page " href="index.html" >Khám phá</a>
-								</li>
-								<li class="nav-item  " > 
-									<a class="nav-link  " href="discovery-example.html" >Ăn uống</a>
-								</li>
-								<li class="nav-item " > 
-									<a class="nav-link " href="#" >Du lịch</a>
-								</li>
-							
-							</ul>
-						</div>
+		  <div class="navbar-collapse text-center">
+			<div
+			  class="col-lg-12 navbar-nav d-flex justify-content-between position-relative"
+			>
+			  <div class="col-lg-5 col-sm-2 nav-item menu">
+				<button
+				  class="navbar-toggler navbar-toggler-right border-0"
+				  type="button"
+				  data-bs-toggle="collapse"
+				  data-bs-target="#theMENU"
+				>
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse text-center" id="theMENU">
+				  <ul class="col-lg-10 navbar-nav justify-content-between">
+					<li class="nav-item">
+					  <a class="nav-link active-page" href="index.html">Khám phá</a>
 					</li>
-					
-					<li class="col-lg-2 nav-item d-none d-lg-block ml-5">
-						<a href="index.html"><img src="image/logo.png" alt="logo"></a>
+					<li class="nav-item">
+					  <a class="nav-link" href="discovery-example.html">Ăn uống</a>
 					</li>
-
-					<li class="col-lg-5">
-							<ul class="navbar-nav justify-content-between">
-								<li class="nav-item">
-									<a class="nav-link search-space" href="#">
-										<btn><i class="fa-solid fa-magnifying-glass  me-1"></i><input type="search" id="search" placeholder="Nhập từ khóa"> 
-										</btn>
-									</a>
-								</li>
-								<li class="icon d-flex">
-									<a class="nav-link px-lg-4" href="#"><i class="fa-regular fa-plus" ></i></a>
-									<a class="nav-link px-lg-4" href="#"><i class="fa-regular fa-user"></i></a>
-									<a class="nav-link px-lg-4" href="#"><i class="fa-regular fa-paper-plane"></i></a>
-								</li>
-									
-							
-								
-							</ul>
+					<li class="nav-item">
+					  <a class="nav-link" href="#">Du lịch</a>
 					</li>
-					
-				</ul>
+				  </ul>
+				</div>
+			  </div>
+  
+			  <div class="col-lg-2 col-sm-8 nav-item">
+				<a href="index.html"><img src="image/logo.png" alt="logo" /></a>
+			  </div>
+  
+			  <div class="col-lg-3 col-sm-12 nav-item search">
+				<a class="nav-link search-space" href="#">
+				  <btn
+					><i class="fa-solid fa-magnifying-glass me-1"></i
+					><input
+					  type="search"
+					  id="search"
+					  placeholder="Nhập từ khóa"
+					/>
+				  </btn>
+				</a>
+			  </div>
+  
+			  <div class="col-lg-2 col-sm-2 nav-item">
+				<div class="icon d-flex">
+				  <a class="nav-link px-lg-4" href="#"
+					><i class="fa-regular fa-plus"></i
+				  ></a>
+				  <a class="nav-link px-lg-4" href="#"
+					><i class="fa-regular fa-user"></i
+				  ></a>
+				  <a class="nav-link px-lg-4" href="#"
+					><i class="fa-regular fa-paper-plane"></i
+				  ></a>
+				</div>
+			  </div>
 			</div>
-		</div>		
-	</nav>
+		  </div>
+		</div>
+	  </nav>
 	
 
 
@@ -79,7 +91,7 @@
 
 	
 	<main>
-		<section id="index-swiper">
+		<section id="index-swiper" data-aos="zoom-in">
 			<div class="swiper mySwiper container-fluid py-lg-6 mt-lg-5 align-content-center">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
@@ -217,13 +229,13 @@
 		<section id="top-review">
 			<div class="container pt-lg-5">
 				<div class="text-center col-lg-12 mx-auto pt-lg-4 pb-lg-5">
-					<h1 class="text-primary pb-lg-5">TOP REVIEW</h1>
+					<h1 class="text-primary pb-lg-5 " data-aos="fade-up">TOP REVIEW</h1>
 				</div>
 
-				<div class="row pt-5">
+				<div class="row pt-5 " >
 
 					<!-- item 1 -->
-					<div class="item col-lg-4 ">
+					<div class="item col-lg-4 " data-aos="fade-up">
 						<h1 class="text-light number-top-review">1</h1>
 						<img src="image/DSCF5878.jpg" alt="top-review-pic-1">
 						<div class="glass-top-review row px-3 py-2">
@@ -283,7 +295,7 @@
 					</div>
 
 					<!-- item 2 -->
-					<div class="item col-lg-4 ">
+					<div class="item col-lg-4 "data-aos="fade-up">
 						<h1 class="text-light number-top-review">2</h1>
 						<img src="image/DSCF8095.jpg" alt="top-review-pic-2">
 						<div class="glass-top-review row px-3 py-2">
@@ -343,7 +355,7 @@
 					</div>
 
 					<!-- item 3 -->
-					<div class="item col-lg-4 ">
+					<div class="item col-lg-4 " data-aos="fade-up">
 						<h1 class="text-light number-top-review">3</h1>
 						<img src="image/DSCF7101.jpg" alt="top-review-pic-3">
 						<div class="glass-top-review row px-3 py-2">
@@ -403,7 +415,7 @@
 					</div>
 					
 <!--					item-2 1-->
-					<div class="col-lg-4 item-2 pt-lg-5">
+					<div class="col-lg-4 item-2 pt-lg-5" data-aos="fade-up">
 						<div class="row">
 							<div class="col-lg-1 py-lg-5">
 								<h2 class="text-primary">4</h2>
@@ -466,7 +478,7 @@
 					</div>
 					
 <!--					item-2 2-->
-					<div class="col-lg-4 item-2 pt-lg-5">
+					<div class="col-lg-4 item-2 pt-lg-5" data-aos="fade-up">
 						<div class="row">
 							<div class="col-lg-1 py-lg-5">
 								<h2 class="text-primary">5</h2>
@@ -529,7 +541,7 @@
 					</div>
 					
 					<!--					item-2 3-->
-					<div class="col-lg-4 item-2 pt-lg-5">
+					<div class="col-lg-4 item-2 pt-lg-5" data-aos="fade-up">
 						<div class="row">
 							<div class="col-lg-1 py-lg-5">
 								<h2 class="text-primary">6</h2>
@@ -597,27 +609,70 @@
 		
 		<section id="sort">
 			<div class="container pt-lg-5">
-				<div class="text-center col-lg-12 mx-auto pt-lg-4 pb-lg-3">
+				<div class="text-center col-lg-12 mx-auto pt-lg-4 pb-lg-3" data-aos="fade-up">
 					<h1 class="text-primary pb-lg-5">TÌM KIẾM NÂNG CAO</h1>
 				</div>
 				
-				<div class="row px-lg-3 mx-lg-3 text-light theSORT">
-					<div class="col-lg-3 d-flex justify-content-between " id=" diadiem">
+				<div class="row px-lg-3 mx-lg-3 text-light theSORT" data-aos="fade-up">
+					<div class="col-lg-3 d-flex justify-content-between theSORT__item" id=" diadiem">
 						<h4 class="ps-lg-2 mt-lg-2 ">Địa điểm</h4>
 						<i class="fa-solid fa-sort-down me-lg-4"></i>
+						<div id="dr1" class="dropdown-content">
+							<span>Gần tôi</span>
+							<span>TP.HCM</span>
+							<span>Hà Nội</span>
+							<span>Cần Thơ</span>
+							<span>Đà Nẵng</span>
+							<span>Đà Lạt</span>
+							<span>Bà Rịa - Vũng Tàu</span>
+							<span>Hà Giang</span>
+							<span>Sapa</span>
+							<span>Cần Thơ</span>
+							<span>Đồng Nai</span>
+							<span>Quảng Ngãi</span>
+							<span>Hải Phòng</span>
+							<span>Thừa Thiên - Huế</span>
+						  </div>
 					</div>
-					<div class="col-lg-3 d-flex justify-content-between" id="nhucau">
-						<h4 class="mt-lg-2 i-border">Nhu cầu</h4>
+
+
+					<div class="col-lg-3 d-flex justify-content-between theSORT__item" id="nhucau">
+						<h4 class="mt-lg-2 ">Nhu cầu</h4>
 						<i class="fa-solid fa-sort-down me-lg-4"></i>
+						<div id="dr1" class="dropdown-content">
+							<span>Ăn sáng</span>
+							<span>Ăn trưa</span>
+							<span>Ăn tối</span>
+							<span>Ăn vặt</span>
+							<span>Tráng miệng</span>
+							<span>Cà phê</span>
+						  </div>
 					</div>
-					<div class="col-lg-3 d-flex justify-content-between" id="danhgia">
-						<h4 class="mt-lg-2 i-border">Đánh giá</h4>
+
+					<div class="col-lg-3 d-flex justify-content-between theSORT__item" id="danhgia">
+						<h4 class="mt-lg-2 ">Đánh giá</h4>
 						<i class="fa-solid fa-sort-down  me-lg-4 "></i>
+						<div id="dr1" class="dropdown-content">
+							<span><img src="image/vote5.png" alt="vote" /></span>
+							<span><img src="image/vote4.png" alt="vote" /></span>
+							<span><img src="image/vote3.png" alt="vote" /></span>
+							<span><img src="image/vote2.png" alt="vote" /></span>
+							<span><img src="image/vote1.png" alt="vote" /></span>
+						  </div>
 					</div>
-					<div class="col-lg-3 mucgia d-flex justify-content-between" id="mucgia">
-						<h4 class=" mt-lg-2 i-border">Mức giá</h4>
+
+					<div class="col-lg-3 mucgia d-flex justify-content-between theSORT__item" id="mucgia">
+						<h4 class=" mt-lg-2">Mức giá</h4>
 						<i class="fa-solid fa-sort-down pe-lg-3"></i>
+						<div id="dr1" class="dropdown-content">
+							<span>Trên 1 triệu</span>
+							<span>Trên 500k</span>
+							<span>Dưới 500k</span>
+							<span>Dưới 300k</span>
+							<span>Dưới 100k</span>
+						  </div>
 					</div>
+
 				</div>
 			</div>
 			
@@ -625,12 +680,12 @@
 		
 		<section id="catergories" class=" pb-lg-5">
 			<div class="container pt-lg-5">
-				<div class="text-center col-lg-12 mx-auto pt-lg-4 pb-lg-3">
-					<h1 class="text-primary pb-lg-5">DANH MỤC</h1>
+				<div class="text-center col-lg-12 mx-auto pt-lg-4 pb-lg-3" data-aos="fade-up">
+					<h1 class="text-primary pb-lg-5" >DANH MỤC</h1>
 				</div>
 				
 				<div class="danhmuc-item d-flex text-center col-lg-8 col-md-8 col-sm-12 mx-auto justify-content-around">
-					<a class="an-uong" href="#">
+					<a class="an-uong" href="#" data-aos="flip-left">
 						<svg width="128" height="129" viewBox="0 0 128 129" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M70.6346 79.1538C69.1603 76.6538 66.6923 74.6667 63.2308 73.1923C59.7692 71.7179 55.7308 70.9808 51.1154 70.9808C46.5 70.9808 42.4782 71.7179 39.05 73.1923C35.6192 74.6667 33.1346 76.6538 31.5962 79.1538H70.6346ZM24 84.9231C24 81.8462 24.7218 79.1051 26.1654 76.7C27.6064 74.2974 29.5449 72.2462 31.9808 70.5462C34.4167 68.8487 37.2846 67.5359 40.5846 66.6077C43.8872 65.6769 47.3974 65.2115 51.1154 65.2115C54.8333 65.2115 58.3436 65.6769 61.6462 66.6077C64.9462 67.5359 67.8308 68.8487 70.3 70.5462C72.7667 72.2462 74.7051 74.2974 76.1154 76.7C77.5256 79.1051 78.2308 81.8462 78.2308 84.9231H24ZM24 98.9615V93.1923H78.2308V98.9615H24ZM85.9231 113V107.231H91.3077L96.6923 54.1538H61.0192L60.3462 48.3846H78.8077V33H84.5769V48.3846H103.038L96.9808 108.481C96.8526 109.827 96.2923 110.917 95.3 111.75C94.3051 112.583 93.1346 113 91.7885 113H85.9231ZM27.0769 113C26.1795 113 25.4423 112.695 24.8654 112.085C24.2885 111.477 24 110.756 24 109.923V107.231H78.2308V109.923C78.2308 110.756 77.9423 111.477 77.3654 112.085C76.7885 112.695 76.0513 113 75.1538 113H27.0769Z" fill="#FDF8F2"/>
 						</svg>
@@ -638,7 +693,7 @@
 						<h4>Ăn uống</h4>
 					</a>
 						
-					<a class="giaitri" href="#">
+					<a class="giaitri" href="#" data-aos="flip-left">
 						<svg width="128" height="129" viewBox="0 0 128 129" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M39.6364 114L44.8312 102.364L41.7683 99.92C40.7626 99.1248 39.8095 98.2424 38.9091 97.2727C38.4242 97.4805 37.9228 97.6357 37.4047 97.7382C36.8838 97.8435 36.3463 97.8961 35.7922 97.8961C33.645 97.8961 31.8095 97.1342 30.2857 95.6104C28.7619 94.0866 28 92.2511 28 90.1039C28 88.8571 28.2771 87.6963 28.8312 86.6213C29.3853 85.5491 30.1472 84.6667 31.1169 83.974C30.5628 82.381 30.1652 80.7699 29.9242 79.1408C29.6803 77.5145 29.5584 75.8009 29.5584 74C29.5584 72.1991 29.6803 70.4842 29.9242 68.8551C30.1652 67.2287 30.5628 65.619 31.1169 64.026C30.1472 63.3333 29.3853 62.4495 28.8312 61.3745C28.2771 60.3023 28 59.1429 28 57.8961C28 55.7489 28.7619 53.9134 30.2857 52.3896C31.8095 50.8658 33.645 50.1039 35.7922 50.1039C36.3463 50.1039 36.8838 50.1552 37.4047 50.2577C37.9228 50.3629 38.4242 50.5195 38.9091 50.7273C41.1948 48.2338 43.7922 46.1558 46.7013 44.4935C49.6104 42.8312 52.7273 41.5844 56.0519 40.7532C56.329 38.8139 57.2128 37.2028 58.7034 35.92C60.1912 34.64 61.9048 34 63.8442 34C65.7143 34 67.3946 34.64 68.8852 35.92C70.373 37.2028 71.2554 38.7792 71.5325 40.6494C74.9264 41.4805 78.0779 42.7273 80.987 44.3896C83.8961 46.0519 86.4935 48.0952 88.7792 50.5195C89.2641 50.3117 89.7489 50.1732 90.2338 50.1039C90.7186 50.0346 91.2035 50 91.6883 50C93.8355 50 95.671 50.7619 97.1948 52.2857C98.7186 53.8095 99.4805 55.6104 99.4805 57.6883C99.4805 58.9351 99.2035 60.0779 98.6494 61.1169C98.0952 62.1558 97.368 63.0563 96.4675 63.8182C97.0217 65.4113 97.4206 67.057 97.6644 68.7553C97.9055 70.4509 98.026 72.1991 98.026 74C98.026 75.8009 97.9055 77.5491 97.6644 79.2447C97.4206 80.943 97.0217 82.5887 96.4675 84.1818C97.368 84.8745 98.0786 85.7223 98.5995 86.7252C99.1176 87.7309 99.3766 88.8571 99.3766 90.1039C99.3766 92.2511 98.6147 94.0866 97.0909 95.6104C95.5671 97.1342 93.7316 97.8961 91.5844 97.8961C91.0996 97.8961 90.6327 97.8435 90.1839 97.7382C89.7323 97.6357 89.2294 97.5152 88.6753 97.3766C87.7749 98.3463 86.8564 99.2467 85.92 100.078C84.9863 100.909 83.9307 101.74 82.7533 102.571L87.7403 114H81.8182L77.974 105.169C76.8658 105.654 75.8102 106.069 74.8073 106.416C73.8016 106.762 72.71 107.074 71.5325 107.351C71.2554 109.221 70.373 110.797 68.8852 112.08C67.3946 113.36 65.7143 114 63.8442 114C61.9048 114 60.1912 113.36 58.7034 112.08C57.2128 110.797 56.329 109.186 56.0519 107.247C54.8745 106.97 53.7662 106.658 52.7273 106.312C51.6883 105.965 50.6147 105.55 49.5065 105.065L45.5584 114H39.6364ZM46.7013 98L53.974 81.5844C53.1429 80.5455 52.5029 79.3846 52.054 78.1018C51.6024 76.8218 51.3766 75.4545 51.3766 74C51.3766 70.6061 52.6068 67.679 55.067 65.2187C57.5245 62.7612 60.4502 61.5325 63.8442 61.5325C67.2381 61.5325 70.1638 62.7612 72.6213 65.2187C75.0816 67.679 76.3117 70.6061 76.3117 74C76.3117 75.4545 76.0526 76.8398 75.5345 78.1558C75.0137 79.4719 74.303 80.684 73.4026 81.7922L80.7792 98C81.5411 97.4459 82.2864 96.8738 83.0151 96.2836C83.741 95.6963 84.4156 95.0216 85.039 94.2597C84.6234 93.7056 84.3297 93.0656 84.1579 92.3397C83.9834 91.6111 83.8961 90.8658 83.8961 90.1039C83.8961 87.8874 84.7106 86.0173 86.3397 84.4935C87.9661 82.9697 89.8528 82.3117 92 82.5195C92.4156 81.1342 92.7453 79.7489 92.9891 78.3636C93.2301 76.9784 93.3506 75.5238 93.3506 74C93.3506 72.4762 93.2301 71.005 92.9891 69.5865C92.7453 68.1652 92.4156 66.7619 92 65.3766C89.8528 65.5152 87.9661 64.8225 86.3397 63.2987C84.7106 61.7749 83.8961 59.9048 83.8961 57.6883C83.8961 56.9957 84.018 56.3197 84.2618 55.6603C84.5029 55.0036 84.7965 54.3983 85.1429 53.8442C83.1342 51.697 80.9011 49.9307 78.4436 48.5455C75.9834 47.1602 73.368 46.0866 70.5974 45.3247C69.974 46.5714 69.057 47.5758 67.8462 48.3377C66.6327 49.0996 65.2987 49.4805 63.8442 49.4805C62.3203 49.4805 60.9531 49.0996 59.7423 48.3377C58.5288 47.5758 57.6104 46.5714 56.987 45.3247C54.1472 46.0866 51.4985 47.1768 49.041 48.5953C46.5808 50.0166 44.3463 51.8009 42.3377 53.9481C42.684 54.5022 42.9777 55.1075 43.2187 55.7642C43.4625 56.4235 43.5844 57.1342 43.5844 57.8961C43.5844 60.1126 42.7699 61.9647 41.1408 63.4525C39.5145 64.943 37.6623 65.619 35.5844 65.4805C35.1688 66.8658 34.8571 68.2511 34.6494 69.6364C34.4416 71.0216 34.3377 72.4762 34.3377 74C34.3377 75.5238 34.4416 76.9784 34.6494 78.3636C34.8571 79.7489 35.1688 81.1342 35.5844 82.5195C37.6623 82.3117 39.5145 82.9697 41.1408 84.4935C42.7699 86.0173 43.5844 87.8874 43.5844 90.1039C43.5844 90.8658 43.4805 91.5751 43.2727 92.2317C43.0649 92.8911 42.7532 93.4978 42.3377 94.052C42.961 94.8139 43.6371 95.4885 44.3657 96.0758C45.0916 96.666 45.8701 97.3074 46.7013 98ZM51.4805 100.701C52.3117 101.117 53.1955 101.481 54.1319 101.794C55.0656 102.105 56.0173 102.398 56.987 102.675C57.6104 101.429 58.5288 100.424 59.7423 99.6623C60.9531 98.9004 62.3203 98.5195 63.8442 98.5195C65.2987 98.5195 66.6327 98.9004 67.8462 99.6623C69.057 100.424 69.974 101.429 70.5974 102.675C71.5671 102.398 72.4842 102.121 73.3486 101.844C74.2158 101.567 75.0996 101.221 76 100.805L69.039 85.2208C68.2078 85.6364 67.3766 85.9481 66.5455 86.1558C65.7143 86.3636 64.8139 86.4675 63.8442 86.4675C62.8052 86.4675 61.8355 86.3456 60.9351 86.1018C60.0346 85.8608 59.1688 85.4978 58.3377 85.013L51.4805 100.701ZM63.8442 80.2338C65.5065 80.2338 66.961 79.645 68.2078 78.4675C69.4545 77.29 70.0779 75.8009 70.0779 74C70.0779 72.3377 69.4545 70.8831 68.2078 69.6364C66.961 68.3896 65.5065 67.7662 63.8442 67.7662C62.0433 67.7662 60.5541 68.3896 59.3766 69.6364C58.1991 70.8831 57.6104 72.3377 57.6104 74C57.6104 75.8009 58.1991 77.29 59.3766 78.4675C60.5541 79.645 62.0433 80.2338 63.8442 80.2338Z" fill="#FDF8F2"/>
 						</svg>	
@@ -647,7 +702,7 @@
 						<h4>Giải trí</h4>
 					</a>
 						
-					<a class="Du lịch" href="#">
+					<a class="Du lịch" href="#" data-aos="flip-left">
 						<svg width="128" height="129" viewBox="0 0 128 129" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M93.184 97.2619H44.032C42.4025 97.2619 40.8398 96.6147 39.6875 95.4627C38.5353 94.3107 37.888 92.7482 37.888 91.1191V63.4762C37.888 61.847 37.2407 60.2845 36.0885 59.1325C34.9362 57.9805 33.3735 57.3333 31.744 57.3333M77.824 84.9762V54.2619C77.824 52.6327 77.1767 51.0703 76.0245 49.9183C74.8722 48.7662 73.3095 48.119 71.68 48.119H68.608C66.9785 48.119 65.4158 48.7662 64.2635 49.9183C63.1113 51.0703 62.464 52.6327 62.464 54.2619V84.9762M53.248 60.4048H87.04C88.7366 60.4048 90.112 61.7799 90.112 63.4762V81.9048C90.112 83.6011 88.7366 84.9762 87.04 84.9762H53.248C51.5514 84.9762 50.176 83.6011 50.176 81.9048V63.4762C50.176 61.7799 51.5514 60.4048 53.248 60.4048ZM87.04 103.405C87.04 106.797 84.2892 109.548 80.896 109.548C77.5028 109.548 74.752 106.797 74.752 103.405C74.752 100.012 77.5028 97.2619 80.896 97.2619C84.2892 97.2619 87.04 100.012 87.04 103.405ZM59.392 103.405C59.392 106.797 56.6412 109.548 53.248 109.548C49.8548 109.548 47.104 106.797 47.104 103.405C47.104 100.012 49.8548 97.2619 53.248 97.2619C56.6412 97.2619 59.392 100.012 59.392 103.405Z" stroke="#FDF8F2" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
@@ -665,22 +720,22 @@
 		<section id="weekly-hot">
 			
 		  <div class="container pt-lg-5">
-				<div class="text-center col-lg-12 mx-auto pt-lg-4 pb-lg-3">
+				<div class="text-center col-lg-12 mx-auto pt-lg-4 pb-lg-3" data-aos="fade-up">
 					<h1 class="text-primary pb-lg-2">HOT TRONG TUẦN</h1>
 				</div>
 				
 				<div class="col-lg-6 col-md-8 col-sm-10 mx-auto text-center weekly-hot-btn">
 					
-				  <button class="button-hot-item hvr-shutter-out-horizontal">Tré trộn</button>
-					<button class="button-hot-item hvr-shutter-out-horizontal">Bánh mì chảo</button>
-					<button class="button-hot-item hvr-shutter-out-horizontal">Bún Thái</button>
-					<button class="button-hot-item hvr-shutter-out-horizontal">Homestay Đà Lạt</button>
-					<button class="button-hot-item hvr-shutter-out-horizontal">Trà sữa HongKong</button>
+				  <button class="button-hot-item hvr-shutter-out-horizontal" data-aos="zoom-out">Tré trộn</button>
+					<button class="button-hot-item hvr-shutter-out-horizontal" data-aos="zoom-out">Bánh mì chảo</button>
+					<button class="button-hot-item hvr-shutter-out-horizontal" data-aos="zoom-out">Bún Thái</button>
+					<button class="button-hot-item hvr-shutter-out-horizontal" data-aos="zoom-out">Homestay Đà Lạt</button>
+					<button class="button-hot-item hvr-shutter-out-horizontal" data-aos="zoom-out">Trà sữa HongKong</button>
 				</div>
 				
 				<!-- item 1 -->
 				<div class="row mb-5">
-					<div class="col-lg-6 gallery innerGallery">
+					<div class="col-lg-6 gallery innerGallery" data-aos="fade-left">
 						<div class="big-image">
 							<div class="image">
 								<img src="image/DSCF8093.jpg" alt="hinh 1" class=" pb-1 p-1 img-fluid" style="display: block;">
@@ -715,7 +770,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-6 gallery-info ps-lg-4 text-light">
+					<div class="col-lg-6 gallery-info ps-lg-4 text-light" data-aos="fade-right">
 						<h3 class="pb-lg-4 ">Loanh quanh thôn Lũng - nhặt nắng cuối ngày</h3>
 						<div class="d-flex ">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -815,7 +870,7 @@
 				<!-- item 2 -->
 			
 				<div class="row mb-5">
-					<div class="col-lg-6 col-md-6 col-sm-12 gallery-info ps-lg-1 text-light">
+					<div class="col-lg-6 col-md-6 col-sm-12 gallery-info ps-lg-1 text-light" data-aos="fade-left">
 						<h3 class="pb-lg-4 ">Ghé thăm MỘC LITTLE FARM để tìm lại vẻ đẹp của những điều 
 							giản  đơn  giữa Sài Gòn ồn ã</h3>
 						<div class="d-flex ">
@@ -909,7 +964,7 @@
 						</div>
 					</div>
 
-					<div class="col-lg-6 gallery innerGallery ps-lg-4">
+					<div class="col-lg-6 gallery innerGallery ps-lg-4" data-aos="fade-right">
 						<div class="big-image">
 							<div class="image">
 								<img src="image/DSCF4006.jpg" alt="hinh 1" class=" pb-1 p-1 img-fluid" style="display: block;">
@@ -947,7 +1002,7 @@
 
 				<!-- item 3 -->
 				<div class="row mb-5">
-					<div class="col-lg-6 gallery innerGallery">
+					<div class="col-lg-6 gallery innerGallery" data-aos="fade-left">
 						<div class="big-image">
 							<div class="image">
 								<img src="image/DSCF4835.jpg" alt="hinh 1" class=" pb-1 p-1 img-fluid" style="display: block;">
@@ -981,7 +1036,7 @@
 							<!-- <img class="col-3 p-1 cursor" src="image/DSCF8095.jpg"  onclick="showImage(this)"> -->
 						</div>
 					</div>
-					<div class="col-lg-6 gallery-info ps-lg-4 text-light">
+					<div class="col-lg-6 gallery-info ps-lg-4 text-light" data-aos="fade-right">
 						<h3 class="pb-lg-4 ">THỨC DẬY CÙNG MẶT TRỜI ĐỂ SĂN MÂY KHI ĐI DU LỊCH ĐÀ LẠT</h3>
 						<div class="d-flex ">
 							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1134,6 +1189,8 @@
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="javascript/custom.js"></script>
 	<script src="javascript/wow.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init();</script>
 	<script> new WOW().init(); </script>
 </body>
 </html>
