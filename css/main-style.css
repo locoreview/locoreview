@@ -1005,7 +1005,10 @@ footer p{
     .search-space {
         width: 100% !important;
     }
-
+	
+	#index-swiper figcation{
+		
+	}
 
 	
 	.theSORT__item:not(:last-child)::after {
@@ -1038,26 +1041,53 @@ footer p{
 
 
 
-	.mySwiper{
+	#index-swiper .mySwiper{
 		min-height:200px;
 		padding-top: 3rem;
 	}
-	.mySwiper .swiper-slide-active{
+	 #index-swiper .mySwiper .swiper-slide-active{
 		transform: scale(1.8);
 		transition:.4s;
 	}
 
-	.mySwiper .swiper-pagination{
+	#index-swiper .mySwiper .swiper-pagination{
 		bottom: 0.3rem;
 	}
-	.mySwiper .swiper-pagination-bullet{
+	#index-swiper .mySwiper .swiper-pagination-bullet{
 		width: .3rem;
 		height: .3rem;
 	}
 	
-	.mySwiper .swiper-custom-btn-nav{
+	#index-swiper .mySwiper .swiper-custom-btn-nav{
 		display:none;
 	}
+	
+	#index-swiper .mySwiper figcaption h2{
+		font-size:0.8rem;
+		padding-bottom: 0;
+		line-height: 0;
+	}
+
+	#index-swiper .mySwiper figcaption p{
+		margin-top:-0.02rem;
+		margin-left:0.2rem;
+		font-size:0.5rem;
+	}
+	
+	
+	#index-swiper .mySwiper figcaption i{
+		font-size:0.5rem;
+		padding-bottom: 0;
+/*		padding-top:0!important;*/
+	}
+	
+	#index-swiper figcaption .btn{
+		font-size:0.2rem;
+		padding: 0.2rem 0.8rem;
+		margin-top:-3rem;
+		
+	}
+	
 
 	/* ----------- discovery */
 	#discovery-slider .mySwiper .swiper-slide-active{
