@@ -392,8 +392,16 @@ nav i:hover{
 
 
 /*catergories*/
-#catergories svg:hover >path{
+#catergories .an-uong svg:hover >path{
 	fill:#FF6000;
+}
+
+#catergories .giaitri svg:hover >path{
+	fill:#FF6000;
+}
+
+#catergories .dulich svg:hover >path{
+	stroke:#ff6000;
 }
 
 #catergories a:hover> h4{
