@@ -1248,7 +1248,7 @@ footer p{
         display: none;
     }
     .theSORT__item {
-        padding: 15px 20px;
+        padding: 6px 20px;
 		border: 2px solid #fdf8f2;
 		margin-bottom: 20px;
 		border-radius: 20px;
@@ -1329,6 +1329,26 @@ footer p{
 
 	footer{
 		margin-top: 5rem;
+	}
+
+	footer .container{
+		padding: 0 50px;
+	}
+
+	footer h5{
+		font-size: 1rem;
+	}
+
+	footer a{
+		font-weight: lighter;
+	}
+
+	.footer-item{
+		justify-content: space-between;
+		margin-bottom: 50px;		
+	}
+	.footer-logo{
+		flex-direction: column;
 	}
 }
 
